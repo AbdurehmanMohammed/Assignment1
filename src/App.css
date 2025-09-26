@@ -15,6 +15,55 @@
 }
 
 
+.navlink {
+  color: #333;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navlink:hover {
+  background-color: var(--brand);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.navbar:hover .navlink:not(:hover) {
+  opacity: 0.6;
+}
+
+.navlink::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--brand);
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+.navlink:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -51,7 +100,7 @@
   color: #888;
 }
 :root{--brand:#2B6CB0;--text:#222}
-body{font-family:Inter,system-ui,Arial;margin:0;color:var(--text);background:#f7fafc}
+body{font-family:Inter,system-ui,Arial;margin:0;color:var(--text);background:#9fa3b5}
 .navbar{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:white;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
 .logo{display:flex;align-items:center;gap:10px}
 .brand{font-weight:700}
