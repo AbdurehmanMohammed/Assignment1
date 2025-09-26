@@ -1,0 +1,116 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  margin-bottom: 2rem;
+}
+
+
+.navlink {
+  color: #333;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navlink:hover {
+  background-color: var(--brand);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.navbar:hover .navlink:not(:hover) {
+  opacity: 0.6;
+}
+
+.navlink::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--brand);
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+.navlink:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+:root{--brand:#2B6CB0;--text:#222}
+body{font-family:Inter,system-ui,Arial;margin:0;color:var(--text);background:#9fa3b5}
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:white;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.logo{display:flex;align-items:center;gap:10px}
+.brand{font-weight:700}
+.navlinks{display:flex;gap:10px}
+.navlink{color:#333;text-decoration:none;padding:6px 8px;border-radius:4px}
+.navlink.active{color:var(--brand);font-weight:700;text-decoration:none}
+.content{max-width:1000px;margin:28px auto;padding:0 16px}
+.footer{padding:14px;text-align:center;color:#666;background:#fff;margin-top:40px;border-top:1px solid #eee}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-info{background:white;padding:16px;border-radius:8px;border:1px solid #eee}
+.contact-form{background:white;padding:16px;border-radius:8px;border:1px solid #eee;display:flex;flex-direction:column;gap:8px}
+.contact-form input, .contact-form textarea{padding:8px;border:1px solid #ddd;border-radius:6px}
+.contact-form button{background:var(--brand);color:white;padding:8px 12px;border-radius:6px;border:0;cursor:pointer}
